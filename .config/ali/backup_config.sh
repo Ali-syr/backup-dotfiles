@@ -11,7 +11,7 @@ echo "==> Backup will be saved to: $backup_dir"
 mkdir -p "$backup_dir"
 
 # Define targets
-targets=(".zshrc" ".tmux.conf")
+targets=(".bashrc")
 
 # Add .config subdirectories
 while IFS= read -r -d '' dir; do

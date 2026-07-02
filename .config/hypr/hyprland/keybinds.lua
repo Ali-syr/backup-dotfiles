@@ -8,7 +8,6 @@ local menu        = "~/.config/ali/app_launcher.sh"
 
 
 
-
 ---------------------
 ---- KEYBINDINGS ----
 ---------------------
@@ -19,8 +18,8 @@ local altMod  = "ALT"   --  Alternative modifier
 hl.bind(mainMod .. " + H", hl.dsp.exec_cmd("~/.config/ali/key_hints.sh")) -- Show keybinds hints
 
 -- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
-hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(terminal))
-local closeWindowBind = hl.bind(mainMod .. " + Q", hl.dsp.window.close()) -- Close program
+hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(terminal)) -- open terminal
+hl.bind(mainMod .. " + Q", hl.dsp.window.close()) -- Close program
 
 -- closeWindowBind:set_enabled(false)
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))

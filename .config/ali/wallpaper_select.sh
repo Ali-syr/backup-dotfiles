@@ -14,4 +14,4 @@ image_fullname_path=$(find "$wallpapers_dir" -type f -name "$selected_wallpaper.
 
 awww img "$image_fullname_path" --transition-type any --transition-duration 2 --transition-fps 60
 
-~/.config/ali/wallpaper_effects.sh "$image_fullname_path"
+~/.config/ali/wallpaper_effects.sh

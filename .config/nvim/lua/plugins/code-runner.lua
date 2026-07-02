@@ -11,13 +11,14 @@ return {
         typescript = "deno run",
         c = "gcc $file -o $fileNameWithoutExt && ./$fileNameWithoutExt",
         cpp = "g++ $file -o $fileNameWithoutExt && ./$fileNameWithoutExt",
-        java = "cd $dir && javac $fileName && java $fileNameWithoutExt",
-        go = "go run",
+        java = "mkdir -p bin && javac -d bin $file && java -cp bin $fileNameWithoutExt",
+        go = "go build -o bin/$fileNameWithoutExt $file && ./bin/$fileNameWithoutExt",
+        rust = "cargo run"
       },
     })
 
     -- Shortcuts
-    vim.keymap.set("n", "<leader>r", ":RunCode<CR>", { desc = "Run Code" })
-    vim.keymap.set("n", "<leader>rf", ":RunFile<CR>", { desc = "Run Current File" })
+    vim.keymap.set("n", "<leader>r", ":RunCode<CR>", { desc = "Run Code" })             -- Space r
+    vim.keymap.set("n", "<leader>rf", ":RunFile<CR>", { desc = "Run Current File" })    -- Space r f
   end,
 }

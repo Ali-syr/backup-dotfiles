@@ -12,4 +12,4 @@ fi
 
 awww img "$random_wallpaper" --transition-type any --transition-duration 2 --transition-fps 60
 
-~/.config/ali/wallpaper_effects.sh "$random_wallpaper"
+~/.config/ali/wallpaper_effects.sh
