@@ -3,9 +3,8 @@
 #
 
 
-
 # ─── Python env ─────────────────────────
-_activate_venv() { 
+_activate_venv() {
     if [[ -f "$1/bin/activate" ]]; then
         source "$1/bin/activate"
     else
@@ -21,4 +20,6 @@ mkvenv() {
     _activate_venv "$name"
 }
 
-venv() { _activate_venv "${1:-.venv}" }
+venv() {
+    _activate_venv "${1:-.venv}"
+}
