@@ -21,6 +21,4 @@
   hl.exec_cmd("wl-paste --type text --watch cliphist store")
   hl.exec_cmd("wl-paste --type image --watch cliphist store")
 
-  -- setup themes
-  hl.exec_cmd("~/.config/ali/gtktheme.sh")
 end)
