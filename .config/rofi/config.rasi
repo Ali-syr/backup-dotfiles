@@ -12,6 +12,7 @@ configuration {
 
 * {
     background: #1e1e2e;
+    background: rgba(30, 30, 46, 0.6); // transparent
     foreground: #cdd6f4;
     select: #585b70;
 
@@ -57,11 +58,11 @@ configuration {
     padding:       3px;
 }
 #element.normal.normal {
-    background-color: @background;
+    background-color: transparent; // @background;
     text-color:       @foreground;
 }
 #element.alternate.normal {
-    background-color: @background;
+    background-color: transparent; // @background;
     text-color:       @foreground;
 }
 #element.selected.normal {
@@ -70,7 +71,7 @@ configuration {
 }
 element-text, element-icon {
     size:             45px;
-    background-color: inherit;
+    background-color: transparent; // inherit;
     text-color:       inherit;
 }
 

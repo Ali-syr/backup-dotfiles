@@ -18,6 +18,17 @@ vim.diagnostic.config({
     update_in_insert = true, -- cheking error msg
 })
 
+-- read only for file binary
+vim.api.nvim_create_autocmd("BufReadPost", {
+  pattern = "*",
+  callback = function()
+    if vim.bo.binary then
+      vim.bo.readonly = true
+      vim.bo.modifiable = false
+    end
+  end,
+})
+
 -- Setup lazy.nvim
 require("options")
 require("keymaps")

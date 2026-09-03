@@ -22,12 +22,12 @@ hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(terminal)) -- open terminal
 hl.bind(mainMod .. " + Q", hl.dsp.window.close()) -- Close program
 
 -- closeWindowBind:set_enabled(false)
-hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock")) -- lockscreen
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager)) -- file manager
 hl.bind(mainMod .. " + F", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(altMod .. " + SPACE", hl.dsp.exec_cmd("~/.config/ali/app_launcher.sh")) -- Application launcher
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo(true)) -- Toggle floating
-hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("firefox")) -- temporary use firefox
+hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("zen-browser")) -- temporary use firefox
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("~/.config/ali/wallpaper_select.sh")) -- Wallpaper selector
 hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd("~/.config/ali/wallpaper_random.sh")) -- Random wallpaper
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("hyprshot -m region -o $HOME/Pictures/Screenshots/")) -- Screenshots

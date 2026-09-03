@@ -7,7 +7,7 @@
         "format" : "⭘ ",
         "tooltip": false,
         "on-click": "wlogout -b 5",
-    },
+    }, 
 
     "hyprland/workspaces": {
         "disable-scroll": true,

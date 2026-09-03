@@ -14,10 +14,19 @@ pacman_packages=(
     sddm qt5ct qt6ct qt5-wayland qt6-wayland
 
     # Input Method
-    fcitx5 fcitx5-gtk fcitx5-qt fcitx5-configtool fcitx5-bamboo
+    fcitx5 fcitx5-gtk fcitx5-qt fcitx5-configtool
     
+    # Font 
+    ttf-jetbrains-mono-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji 
+
     # Misc
-    ttf-jetbrains-mono-nerd noto-fonts nwg-look kvantum-qt5 libvips libheif openslide poppler-glib cliphist gnome-characters keepass
+    nwg-look kvantum-qt5 libvips libheif openslide poppler-glib cliphist gnome-characters
+
+    # Env
+    matugen
+
+    # System Environment tools 
+    glow github-cli neovim zsh zsh-syntax-highlighting zsh-autosuggestions zsh-completions 
 )
 
 sudo pacman -S --noconfirm "${pacman_packages[@]}"

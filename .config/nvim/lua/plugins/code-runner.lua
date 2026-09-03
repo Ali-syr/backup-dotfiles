@@ -9,8 +9,8 @@ return {
         python = "python3 -u",
         javascript = "node",
         typescript = "deno run",
-        c = "gcc $file -o $fileNameWithoutExt && ./$fileNameWithoutExt",
-        cpp = "g++ $file -o $fileNameWithoutExt && ./$fileNameWithoutExt",
+        c = "clang++ $file -o $fileNameWithoutExt && ./$fileNameWithoutExt",
+        cpp = "clang++ $file -o $fileNameWithoutExt && ./$fileNameWithoutExt",
         java = "mkdir -p bin && javac -d bin $file && java -cp bin $fileNameWithoutExt",
         go = "go build -o bin/$fileNameWithoutExt $file && ./bin/$fileNameWithoutExt",
         rust = "cargo run"

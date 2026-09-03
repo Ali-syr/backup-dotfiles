@@ -28,15 +28,11 @@ return {
 
     dap.configurations.cpp = {
       {
-        name = "Launch file dari folder bin",
+        name = "Launch file binary",
         type = "codelldb",
         request = "launch",
         program = function()
-          local target = vim.fn.expand("%:p:h") .. "/bin/" .. vim.fn.expand("%:t:r")
-          if vim.fn.has("win32") == 1 then
-            target = target .. ".exe"
-          end
-          return target
+        return vim.fn.expand("%:p:h") .. "/bin" .. vim.fn.expand("%t:r")
         end,
         cwd = "${workspaceFolder}",
         stopOnEntry = false,
